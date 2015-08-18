@@ -7,6 +7,15 @@
 		<title>BrazIndi - CD-DVD</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css" />
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<!-- include the jQuery and jQuery UI JavaScript files -->
+<link rel="stylesheet" href="styles/jquery-ui.css">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/jquery-ui.js"></script>
+<script>
+  $(function() {
+    $( "#mydiv" ).accordion();
+  });
+  </script>
 	</head>
 	<body>
 		<!-- begin #container -->
@@ -141,15 +150,16 @@
 			<!-- begin #sidebar1 -->
 			<div id="sidebar1">
 				<h2>Categories</h2>
-				<ul>
-					<li>
+				<ul id="mydiv">
+					<li >
 						<a href="#">Action</a>
+						<div><p>Action film is a film genre in which one or more heroes are thrust into a series of challenges that typically include physical feats, extended fight scenes, violence, and frantic chases. Action films tend to feature a resourceful character struggling against incredible odds, which include life-threatening situations, a villain, or a pursuit which generally concludes in victory for the hero.</p></div>
 					</li>
 					<li>
-						<a href="#">Adventure</a>
+						<a href="#">Adventure</a><div><p>Adventure films are a genre of film. Unlike action films, they often use their action scenes preferably to display and explore exotic locations in an energetic way.</p></div>
 					</li>
 					<li>
-						<a href="#">Animation</a>
+						<a href="#">Animation</a><div><p>Animation is the process of creating the illusion of motion and shape change by means of the rapid display of a sequence of static images that minimally differ from each other. The illusion—as in motion pictures in general—is thought to rely on the phi phenomenon. Animators are artists who specialize in the creation of animation.</p></div>
 					</li>
 					<li>
 						<a href="#">Biography</a>
@@ -332,6 +342,21 @@
 			<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
 			<br class="clearfloat" />
 			<!-- begin #footer -->
+			
+			<!-- accordion testing -->
+			
+			<div id="accordion">
+    <h3><a href="#">Book description</a></h3>
+    <div> <!-- panel contents --> </div>
+    <h3><a href="#">About the author</a></h3>
+    <div> <!-- panel contents --> </div>
+    <h3><a href="#">Who this book is for</a></h3>
+    <div> <!-- panel contents --> </div>
+</div>		
+			
+			<!-- -->
+			
+			
 			<div id="footer">
 				<p>
 					Terms of Use | <a title="This page validates as XHTML 1.0 Strict" href="http://validator.w3.org/check/referer" class="footerLink"><abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a> | <a title="This page validates as CSS" href="http://jigsaw.w3.org/css-validator/check/referer" class="footerLink"><abbr title="Cascading Style Sheets">CSS</abbr></a> |  Copyright &copy; BrazIndi 2015.
