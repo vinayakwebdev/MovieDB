@@ -201,7 +201,7 @@ h2 {
 	font-size: 1px;
 	line-height: 0px;
 }
-/* Carousel Style Starts */
+/* Carousel Style Starts 
 
 #Car_container {
     margin:100px auto;
@@ -226,7 +226,7 @@ h2 {
     background-color:#00ABFF;
     padding:5px;
     border:none;
-    /*font-size:17px;*/
+    /*font-size:17px;*//*
     color:#fff;
     }
  
@@ -235,7 +235,50 @@ h2 {
     }
  
 #next {
-    /*float:right;*/
+    /*float:right;*//*
     }  
    
-/* Carousel Style Ends */
+ Carousel Style Ends */
+
+/* */
+.image-shown
+{
+	display: inline-block;
+}
+
+.image-hidden
+{
+	display: none;
+}
+
+.carousel-inner
+{
+	/*width: 500px;*/
+	height: 400px;
+	position: relative;
+	float: left;
+}
+
+.carousel-inner img
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.previousLink, .nextLink
+{
+	float:left;
+	margin-top: 170px;
+}
+
+.previousLink
+{
+	margin-right: 20px;
+}
+
+.nextLink
+{
+	margin-left: 20px;
+}
+/* */

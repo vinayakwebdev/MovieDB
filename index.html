@@ -8,14 +8,15 @@
 		<link href="styles/styles.css" rel="stylesheet" type="text/css" />
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<!-- include the jQuery and jQuery UI JavaScript files -->
-<link rel="stylesheet" href="styles/jquery-ui.css">
-  <script src="js/jquery-1.10.2.js"></script>
-  <script src="js/jquery-ui.js"></script>
-<script>
-  $(function() {
-    $( "#mydiv" ).accordion();
-  });
-  </script>
+		<link rel="stylesheet" href="styles/jquery-ui.css">
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/jquery-1.9.0.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script>
+			$(function() {
+				$("#mydiv").accordion();
+			});
+		</script>
 	</head>
 	<body>
 		<!-- begin #container -->
@@ -36,16 +37,16 @@
 								<a href="">HOME</a>
 							</li>
 							<li>
-								<a href="">ONLINE STORE</a>
+								<a href="">Top 10 List</a>
 							</li>
 							<li>
-								<a href="">NEW PRODUCTS</a>
+								<a href="">NEW Realeses</a>
 							</li>
 							<li>
-								<a href="">NEWS</a>
+								<a href="">About Us</a>
 							</li>
 							<li>
-								<a href="">CONTACT</a>
+								<a href="">Contact Us</a>
 							</li>
 						</ul>
 					</div>
@@ -66,7 +67,21 @@
 					<div class="clearfloat"></div>
 				</div>
 				<div>
-					<div class="headerPic"><img src="images/headerPic.jpg" alt="" />
+					<div class="headerPic">
+						<div class="carousel-outer">
+							
+							<div class="carousel-inner">
+								<a href="http://www.google.com" class="image-shown"><img width="700" height="300" src="images/pic1.jpg" alt="" /></a>
+								<a class="image-hidden"><img width="700" height="300" src="images/headerPic.jpg" alt="" /></a>
+								<a href="http://www.cnn.com" class="image-hidden"><img width="700" height="300" src="images/pic2.jpg" alt="" /></a>
+								<a class="image-hidden"><img width="700" height="300" src="images/pic3.jpg" alt="" /></a>
+								<a class="image-hidden"><img width="700" height="300" src="images/pic4.jpg" alt="" /></a>
+								<a class="image-hidden"><img width="700" height="300" src="images/pic5.jpg" alt="" /></a>
+							</div>
+							
+						</div>
+						<script src="js/carousel.js"></script>
+
 					</div>
 					<div class="headerSlogan">
 						THE LATEST
@@ -79,72 +94,76 @@
 
 				<!-- -->
 
+				<!-- -->
+
+				<!--
+
 				<div id="Car_container">
-					<ul id="slider">
-						<li class="slide selected"> 
-							<img src="images/pic1.jpg" width="700" height="300" alt=""/>
-						</li>
-						<li class="slide"><img src="images/pic2.jpg" width="700" height="300" alt=""/>
-						</li>
-						<li class="slide"><img src="images/pic3.jpg" width="700" height="300" alt=""/>
-						</li>
-						<li class="slide"><img src="images/pic4.jpg" width="700" height="300" alt=""/>
-						</li>
-					</ul>
-					<button id="prev">
-						Previous
-					</button>
-					<button id="next">
-						Next
-					</button>
-					<div style="clear:both"></div>
+				<ul id="slider">
+				<li class="slide selected">
+				<img src="images/pic1.jpg" width="700" height="300" alt=""/>
+				</li>
+				<li class="slide"><img src="images/pic2.jpg" width="700" height="300" alt=""/>
+				</li>
+				<li class="slide"><img src="images/pic3.jpg" width="700" height="300" alt=""/>
+				</li>
+				<li class="slide"><img src="images/pic4.jpg" width="700" height="300" alt=""/>
+				</li>
+				</ul>
+				<button id="prev">
+				Previous
+				</button>
+				<button id="next">
+				Next
+				</button>
+				<div style="clear:both"></div>
 				</div>
 				<div class="clearfloat"></div>
 				<script>
-					// Have the first and last li's set to a variable
-					var $first = $('li:first', 'ul'),
-					    $last = $('li:last', 'ul');
+				// Have the first and last li's set to a variable
+				var $first = $('li:first', 'ul'),
+				$last = $('li:last', 'ul');
 
-					$("#next").click(function() {
+				$("#next").click(function() {
 
-						var $next,
-						    $selected = $(".selected");
-						// get the selected item
-						// If next li is empty , get the first
-						$next = $selected.next('li').length ? $selected.next('li') : $first;
-						$selected.removeClass("selected").fadeOut('fast');
-						$next.addClass('selected').fadeIn('fast');
-					});
-					$("#prev").click(function() {
-						var $prev,
-						    $selected = $(".selected");
-						// get the selected item
-						// If prev li is empty , get the last
-						$prev = $selected.prev('li').length ? $selected.prev('li') : $last;
-						$selected.removeClass("selected").fadeOut('fast');
-						$prev.addClass('selected').fadeIn('fast');
-					});
-					var time = 5000;
-					var tid = setTimeout(timer, time);
+				var $next,
+				$selected = $(".selected");
+				// get the selected item
+				// If next li is empty , get the first
+				$next = $selected.next('li').length ? $selected.next('li') : $first;
+				$selected.removeClass("selected").fadeOut('fast');
+				$next.addClass('selected').fadeIn('fast');
+				});
+				$("#prev").click(function() {
+				var $prev,
+				$selected = $(".selected");
+				// get the selected item
+				// If prev li is empty , get the last
+				$prev = $selected.prev('li').length ? $selected.prev('li') : $last;
+				$selected.removeClass("selected").fadeOut('fast');
+				$prev.addClass('selected').fadeIn('fast');
+				});
+				var time = 5000;
+				var tid = setTimeout(timer, time);
 
-					function timer() {
-						var $next,
-						    $selected = $(".selected");
-						// get the selected item
-						// If next li is empty , get the first
-						$next = $selected.next('li').length ? $selected.next('li') : $first;
-						$selected.removeClass("selected").fadeOut('fast');
-						$next.addClass('selected').fadeIn('fast');
+				function timer() {
+				var $next,
+				$selected = $(".selected");
+				// get the selected item
+				// If next li is empty , get the first
+				$next = $selected.next('li').length ? $selected.next('li') : $first;
+				$selected.removeClass("selected").fadeOut('fast');
+				$next.addClass('selected').fadeIn('fast');
 
-						tid = setTimeout(timer, time);
-						// repeat myself
-					}
+				tid = setTimeout(timer, time);
+				// repeat myself
+				}
 
-					function abortTimer() {// to be called when you want to stop the timer
-						clearTimeout(tid);
-					}
+				function abortTimer() {// to be called when you want to stop the timer
+				clearTimeout(tid);
+				}
 				</script>
-				<!-- -->
+				-->
 			</div>
 			<!-- end #header -->
 			<!-- begin #sidebar1 -->
@@ -153,13 +172,27 @@
 				<ul id="mydiv">
 					<li >
 						<a href="#">Action</a>
-						<div><p>Action film is a film genre in which one or more heroes are thrust into a series of challenges that typically include physical feats, extended fight scenes, violence, and frantic chases. Action films tend to feature a resourceful character struggling against incredible odds, which include life-threatening situations, a villain, or a pursuit which generally concludes in victory for the hero.</p></div>
+						<div>
+							<p>
+								Action film is a film genre in which one or more heroes are thrust into a series of challenges that typically include physical feats, extended fight scenes, violence, and frantic chases. Action films tend to feature a resourceful character struggling against incredible odds, which include life-threatening situations, a villain, or a pursuit which generally concludes in victory for the hero.
+							</p>
+						</div>
 					</li>
 					<li>
-						<a href="#">Adventure</a><div><p>Adventure films are a genre of film. Unlike action films, they often use their action scenes preferably to display and explore exotic locations in an energetic way.</p></div>
+						<a href="#">Adventure</a>
+						<div>
+							<p>
+								Adventure films are a genre of film. Unlike action films, they often use their action scenes preferably to display and explore exotic locations in an energetic way.
+							</p>
+						</div>
 					</li>
 					<li>
-						<a href="#">Animation</a><div><p>Animation is the process of creating the illusion of motion and shape change by means of the rapid display of a sequence of static images that minimally differ from each other. The illusion—as in motion pictures in general—is thought to rely on the phi phenomenon. Animators are artists who specialize in the creation of animation.</p></div>
+						<a href="#">Animation</a>
+						<div>
+							<p>
+								Animation is the process of creating the illusion of motion and shape change by means of the rapid display of a sequence of static images that minimally differ from each other. The illusion—as in motion pictures in general—is thought to rely on the phi phenomenon. Animators are artists who specialize in the creation of animation.
+							</p>
+						</div>
 					</li>
 					<li>
 						<a href="#">Biography</a>
@@ -342,21 +375,26 @@
 			<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
 			<br class="clearfloat" />
 			<!-- begin #footer -->
-			
+
 			<!-- accordion testing -->
-			
+
 			<div id="accordion">
-    <h3><a href="#">Book description</a></h3>
-    <div> <!-- panel contents --> </div>
-    <h3><a href="#">About the author</a></h3>
-    <div> <!-- panel contents --> </div>
-    <h3><a href="#">Who this book is for</a></h3>
-    <div> <!-- panel contents --> </div>
-</div>		
-			
+				<h3><a href="#">Book description</a></h3>
+				<div>
+					<!-- panel contents -->
+				</div>
+				<h3><a href="#">About the author</a></h3>
+				<div>
+					<!-- panel contents -->
+				</div>
+				<h3><a href="#">Who this book is for</a></h3>
+				<div>
+					<!-- panel contents -->
+				</div>
+			</div>
+
 			<!-- -->
-			
-			
+
 			<div id="footer">
 				<p>
 					Terms of Use | <a title="This page validates as XHTML 1.0 Strict" href="http://validator.w3.org/check/referer" class="footerLink"><abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a> | <a title="This page validates as CSS" href="http://jigsaw.w3.org/css-validator/check/referer" class="footerLink"><abbr title="Cascading Style Sheets">CSS</abbr></a> |  Copyright &copy; BrazIndi 2015.
