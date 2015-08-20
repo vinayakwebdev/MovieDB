@@ -14,7 +14,7 @@ $(document).ready(function(){
 		currentActiveImage.removeClass("image-shown").addClass("image-hidden").css("z-index", -10);
 		nextActiveImage.addClass("image-shown").removeClass("image-hidden").css("z-index", 20);
 		$(".carousel-inner a").not([currentActiveImage, nextActiveImage]).css("z-index", 1);
-
+		
 		e.preventDefault();
 	});
 
@@ -48,7 +48,6 @@ $(document).ready(function(){
 		currentActiveImage.removeClass("image-shown").addClass("image-hidden").css("z-index", -10);
 		nextActiveImage.addClass("image-shown").removeClass("image-hidden").css("z-index", 20);
 		$(".carousel-inner a").not([currentActiveImage, nextActiveImage]).css("z-index", 1);
-		
 		tid = setTimeout(timer, time);
 						// repeat myself
 

@@ -9,251 +9,177 @@
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<!-- include the jQuery and jQuery UI JavaScript files -->
 		<link rel="stylesheet" href="styles/jquery-ui.css">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="styles/metro.css">
 		<script src="js/jquery-1.10.2.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 		<script src="js/jquery-1.9.0.js"></script>
 		<script src="js/jquery-ui.js"></script>
-		<script>
-			$(function() {
-				$("#mydiv").accordion();
-			});
-		</script>
 	</head>
-	<body>
+	<body data-role="page">
 		<!-- begin #container -->
 		<div id="container">
+
 			<!-- begin #header -->
 			<div id="header">
-				<div class="logo">
-					<a href=""><img src="images/logo.png" alt="" /></a>
-				</div>
-				<div class="slogan">
-					BrazIndi ONLINE STORE
-				</div>
 				<div class="clearfloat"></div>
-				<div class="headerTop">
-					<div class="menu">
-						<ul>
-							<li id="active">
-								<a href="">HOME</a>
+
+				<section class="main">
+					<form class="search" method="post" action="index.html" >
+						<input type="text" name="q" placeholder="Search..." />
+						<ul class="results" >
+							<li>
+								<a href="category.html">
+								<br />
+								<span>Action</span></a>
 							</li>
 							<li>
-								<a href="">Top 10 List</a>
+								<a href="index.html">
+								<br />
+								<span>Drama</span></a>
 							</li>
 							<li>
-								<a href="">NEW Realeses</a>
+								<a href="index.html">
+								<br />
+								<span>Comedy</span></a>
 							</li>
 							<li>
-								<a href="">About Us</a>
+								<a href="index.html">
+								<br />
+								<span>Romance</span></a>
 							</li>
 							<li>
-								<a href="">Contact Us</a>
+								<a href="index.html">
+								<br />
+								<span>Mystery</span></a>
+							</li>
+							<li>
+								<a href="index.html">
+								<br />
+								<span>Sci-fi</span></a>
+							</li>
+							<li>
+								<a href="index.html">
+								<br />
+								<span>Horror</span></a>
 							</li>
 						</ul>
-					</div>
-					<div class="icons">
-						<!-- Not Needed now may be in future we can use reference here
-						<ul class="icons">
-						<li><a href=""><img src="images/twitter.png" alt="" /></a></li>
-						<li><a href=""><img src="images/delicious.png" alt="" /></a></li>
-						<li><a href=""><img src="images/facebook.png" alt="" /></a></li>
-						<li><a href=""><img src="images/feed.png" alt="" /></a></li>
-						<li><a href=""><img src="images/flickr.png" alt="" /></a></li>
-						<li><a href=""><img src="images/linkedin.png" alt="" /></a></li>
-						<li><a href=""><img src="images/myspace.png" alt="" /></a></li>
-						<li><a href=""><img src="images/stumble.png" alt="" /></a></li>
+					</form>
+				</section>
+
+				<!-- -->
+				<div id="header">
+					<div>
+						<div class="logo">
+							<a href="index.html"><img alt="" src="images/logo.png"></a>
+						</div>
+						<ul id="navigation">
+							<li class="active">
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="checkout.html">Check out</a>
+							</li>
+							<li>
+								<a href="about.html">About</a>
+							</li>
+
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+
 						</ul>
-						-->
 					</div>
+
+					<!-- begin #sidebar1 -->
+					<div id="sidebar1">
+						<!-- side bar metro style -->
+
+						<div id="home" class="container">
+							<div class="header">
+								<!--<a class="menu-icon" href="#"><i class="category" >Categories</i></a> -->
+								<a class="menu-icon" href="#" style="margin-top: -85px;"><i class="category" ><img src="images/menu.jpg" width="50px" height="50px" /></i></a>
+								<ul class="side-menu">
+									<h2 class="title">Top 7 Categories</h2>
+									<li class="row">
+										<ul>
+											<li class="metro red half">
+												<a href="category.html">Action</a>
+											</li>
+											<li class="metro light-blue">
+												<a href="#">Drama</a>
+											</li>
+										</ul>
+									</li>
+									<li class="row">
+										<ul>
+											<li class="metro blue half">
+												<a href="#">Comedy</a>
+											</li>
+											<li class="metro green half">
+												<a href="#">Romance</a>
+											</li>
+										</ul>
+									</li>
+									<li class="row">
+										<ul>
+											<li class="metro pink half">
+												<a href="#">Mystery</a>
+											</li>
+											<li class="metro orange half">
+												<a href="#">Sci-fi</a>
+											</li>
+										</ul>
+									</li>
+									<li class="row">
+										<ul>
+											<li class="metro light-blue full">
+												<a href="#">Horror</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<script src="js/metroside.js"></script>
+						<div class="clearfloat"></div>
+						<!-- -->
+					</div>
+					<!-- end #sidebar1 -->
 					<div class="clearfloat"></div>
 				</div>
+
+				<!-- my header ends-->
+				<!-- end headertop class -->
 				<div>
+					<br/>
+					<br/>
 					<div class="headerPic">
 						<div class="carousel-outer">
-							
+
 							<div class="carousel-inner">
-								<a href="http://www.google.com" class="image-shown"><img width="700" height="300" src="images/pic1.jpg" alt="" /></a>
+								<a href="http://www.google.com" class="image-shown"><img width="700" height="300" src="images/pos1.jpg" alt="" /></a>
 								<a class="image-hidden"><img width="700" height="300" src="images/headerPic.jpg" alt="" /></a>
-								<a href="http://www.cnn.com" class="image-hidden"><img width="700" height="300" src="images/pic2.jpg" alt="" /></a>
-								<a class="image-hidden"><img width="700" height="300" src="images/pic3.jpg" alt="" /></a>
-								<a class="image-hidden"><img width="700" height="300" src="images/pic4.jpg" alt="" /></a>
-								<a class="image-hidden"><img width="700" height="300" src="images/pic5.jpg" alt="" /></a>
+								<a href="http://www.cnn.com" class="image-hidden"><img width="700" height="300" src="images/pos2.jpg" alt="" /></a>
+								<a class="image-hidden"><img width="700" height="300" src="images/pos3.jpg" alt="" /></a>
+								<a class="image-hidden"><img width="700" height="300" src="images/pos4.jpg" alt="" /></a>
+								<a class="image-hidden"><img width="700" height="300" src="images/pos5.jpg" alt="" /></a>
 							</div>
-							
+
 						</div>
+						<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 						<script src="js/carousel.js"></script>
 
 					</div>
-					<div class="headerSlogan">
-						THE LATEST
-						<br />
-						FILM OF Brazil &#38; India
-					</div>
-
 				</div>
 				<div class="clearfloat"></div>
+				<br/>
 
-				<!-- -->
-
-				<!-- -->
-
-				<!--
-
-				<div id="Car_container">
-				<ul id="slider">
-				<li class="slide selected">
-				<img src="images/pic1.jpg" width="700" height="300" alt=""/>
-				</li>
-				<li class="slide"><img src="images/pic2.jpg" width="700" height="300" alt=""/>
-				</li>
-				<li class="slide"><img src="images/pic3.jpg" width="700" height="300" alt=""/>
-				</li>
-				<li class="slide"><img src="images/pic4.jpg" width="700" height="300" alt=""/>
-				</li>
-				</ul>
-				<button id="prev">
-				Previous
-				</button>
-				<button id="next">
-				Next
-				</button>
-				<div style="clear:both"></div>
-				</div>
-				<div class="clearfloat"></div>
-				<script>
-				// Have the first and last li's set to a variable
-				var $first = $('li:first', 'ul'),
-				$last = $('li:last', 'ul');
-
-				$("#next").click(function() {
-
-				var $next,
-				$selected = $(".selected");
-				// get the selected item
-				// If next li is empty , get the first
-				$next = $selected.next('li').length ? $selected.next('li') : $first;
-				$selected.removeClass("selected").fadeOut('fast');
-				$next.addClass('selected').fadeIn('fast');
-				});
-				$("#prev").click(function() {
-				var $prev,
-				$selected = $(".selected");
-				// get the selected item
-				// If prev li is empty , get the last
-				$prev = $selected.prev('li').length ? $selected.prev('li') : $last;
-				$selected.removeClass("selected").fadeOut('fast');
-				$prev.addClass('selected').fadeIn('fast');
-				});
-				var time = 5000;
-				var tid = setTimeout(timer, time);
-
-				function timer() {
-				var $next,
-				$selected = $(".selected");
-				// get the selected item
-				// If next li is empty , get the first
-				$next = $selected.next('li').length ? $selected.next('li') : $first;
-				$selected.removeClass("selected").fadeOut('fast');
-				$next.addClass('selected').fadeIn('fast');
-
-				tid = setTimeout(timer, time);
-				// repeat myself
-				}
-
-				function abortTimer() {// to be called when you want to stop the timer
-				clearTimeout(tid);
-				}
-				</script>
-				-->
 			</div>
 			<!-- end #header -->
-			<!-- begin #sidebar1 -->
-			<div id="sidebar1">
-				<h2>Categories</h2>
-				<ul id="mydiv">
-					<li >
-						<a href="#">Action</a>
-						<div>
-							<p>
-								Action film is a film genre in which one or more heroes are thrust into a series of challenges that typically include physical feats, extended fight scenes, violence, and frantic chases. Action films tend to feature a resourceful character struggling against incredible odds, which include life-threatening situations, a villain, or a pursuit which generally concludes in victory for the hero.
-							</p>
-						</div>
-					</li>
-					<li>
-						<a href="#">Adventure</a>
-						<div>
-							<p>
-								Adventure films are a genre of film. Unlike action films, they often use their action scenes preferably to display and explore exotic locations in an energetic way.
-							</p>
-						</div>
-					</li>
-					<li>
-						<a href="#">Animation</a>
-						<div>
-							<p>
-								Animation is the process of creating the illusion of motion and shape change by means of the rapid display of a sequence of static images that minimally differ from each other. The illusion—as in motion pictures in general—is thought to rely on the phi phenomenon. Animators are artists who specialize in the creation of animation.
-							</p>
-						</div>
-					</li>
-					<li>
-						<a href="#">Biography</a>
-					</li>
-					<li>
-						<a href="#">Comedy</a>
-					</li>
-					<li>
-						<a href="#">Crime</a>
-					</li>
-					<li>
-						<a href="#">Documentry</a>
-					</li>
-					<li>
-						<a href="#">drama</a>
-					</li>
-					<li>
-						<a href="#">Family</a>
-					</li>
-					<li>
-						<a href="#">Fantasy</a>
-					</li>
-					<li>
-						<a href="#">Film-Noir</a>
-					</li>
-					<li>
-						<a href="#">History</a>
-					</li>
-					<li>
-						<a href="#">Horror</a>
-					</li>
-					<li>
-						<a href="#">Music</a>
-					</li>
-					<li>
-						<a href="#">Musical</a>
-					</li>
-					<li>
-						<a href="#">Mystery</a>
-					</li>
-					<li>
-						<a href="#">Romance</a>
-					</li>
-					<li>
-						<a href="#">Sci-Fi</a>
-					</li>
-					<li>
-						<a href="#">Sports</a>
-					</li>
-					<li>
-						<a href="#">thriler</a>
-					</li>
-					<li>
-						<a href="#">War</a>
-					</li>
-					<li>
-						<a href="#">Western</a>
-					</li>
-				</ul>
-			</div>
-			<!-- end #sidebar1 -->
+
 			<!-- begin #mainContent -->
 			<div id="mainContent">
 				<div class="box">
@@ -360,19 +286,140 @@
 						<a href="">Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Details</a>
 					</div>
 				</div>
+				<div class="box">
+					<div><img src="images/pic9.jpg" width="160" height="243" alt="" />
+					</div>
+					<div class="boxTitle">
+						Her Fatal Flaw
+					</div>
+					<div class="boxPrice">
+						$22.44
+					</div>
+					<div class="boxLink">
+						<a href="">Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Details</a>
+					</div>
+				</div>
+				<div class="box">
+					<div><img src="images/pic10.jpg" width="160" height="243" alt="" />
+					</div>
+					<div class="boxTitle">
+						Her Fatal Flaw
+					</div>
+					<div class="boxPrice">
+						$22.44
+					</div>
+					<div class="boxLink">
+						<a href="">Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Details</a>
+					</div>
+				</div>
+				<div class="box">
+					<div><img src="images/pic11.jpg" width="160" height="243" alt="" />
+					</div>
+					<div class="boxTitle">
+						Her Fatal Flaw
+					</div>
+					<div class="boxPrice">
+						$22.44
+					</div>
+					<div class="boxLink">
+						<a href="">Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Details</a>
+					</div>
+				</div>
+				<div class="box">
+					<div><img src="images/pic12.jpg" width="160" height="243" alt="" />
+					</div>
+					<div class="boxTitle">
+						Her Fatal Flaw
+					</div>
+					<div class="boxPrice">
+						$22.44
+					</div>
+					<div class="boxLink">
+						<a href="">Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Details</a>
+					</div>
+				</div>
+				<div class="box">
+					<div><img src="images/pic13.jpg" width="160" height="243" alt="" />
+					</div>
+					<div class="boxTitle">
+						Her Fatal Flaw
+					</div>
+					<div class="boxPrice">
+						$22.44
+					</div>
+					<div class="boxLink">
+						<a href="">Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Details</a>
+					</div>
+				</div>
+				<div class="box">
+					<div><img src="images/pic14.jpg" width="160" height="243" alt="" />
+					</div>
+					<div class="boxTitle">
+						Her Fatal Flaw
+					</div>
+					<div class="boxPrice">
+						$22.44
+					</div>
+					<div class="boxLink">
+						<a href="">Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Details</a>
+					</div>
+				</div>
+				<div class="box">
+					<div><img src="images/pic15.jpg" width="160" height="243" alt="" />
+					</div>
+					<div class="boxTitle">
+						Her Fatal Flaw
+					</div>
+					<div class="boxPrice">
+						$22.44
+					</div>
+					<div class="boxLink">
+						<a href="">Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Details</a>
+					</div>
+				</div>
+				<div class="box">
+					<div><img src="images/pic16.jpg" width="160" height="243" alt="" />
+					</div>
+					<div class="boxTitle">
+						Her Fatal Flaw
+					</div>
+					<div class="boxPrice">
+						$22.44
+					</div>
+					<div class="boxLink">
+						<a href="">Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Details</a>
+					</div>
+				</div>
+				<div class="box">
+					<div><img src="images/pic17.jpg" width="160" height="243" alt="" />
+					</div>
+					<div class="boxTitle">
+						Her Fatal Flaw
+					</div>
+					<div class="boxPrice">
+						$22.44
+					</div>
+					<div class="boxLink">
+						<a href="">Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Details</a>
+					</div>
+				</div>
+				<div class="box">
+					<div><img src="images/pic18.jpg" width="160" height="243" alt="" />
+					</div>
+					<div class="boxTitle">
+						Her Fatal Flaw
+					</div>
+					<div class="boxPrice">
+						$22.44
+					</div>
+					<div class="boxLink">
+						<a href="">Add to Cart</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Details</a>
+					</div>
+				</div>
 			</div>
 			<div class="clearfloat"></div>
-			<div>
-				<h1>Welcome</h1>
-				<p>
-					<b>Some dummy content abt website can b info regarding movies or histry etc</b>
-					<br />
-					<br />
-					Any thing etc here # rafael can you write here some stuff ?
-				</p>
-			</div>
 			<!-- end #mainContent -->
-			
+
 			<!-- begin #shopcart -->
 			<div id="cd-shadow-layer"></div>
 			<div id="cd-cart">
@@ -381,59 +428,54 @@
 				<ul class="cd-cart-items">
 					<li>
 						<span class="cd-qty">1x</span> Slacker
-				<div class="cd-price">$22.44</div>
-				<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>
+						<div class="cd-price">
+							$22.44
+						</div>
+						<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>
 					</li>
 					<li>
 						<span class="cd-qty">1x</span> American Zombie
-				<div class="cd-price">$22.44</div>
-				<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>
+						<div class="cd-price">
+							$22.44
+						</div>
+						<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>
 					</li>
-				<li>
+					<li>
 						<span class="cd-qty">1x</span> Her fatal flaw
-				<div class="cd-price">$22.44</div>
-				<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>
-					</li>				
+						<div class="cd-price">
+							$22.44
+						</div>
+						<a href="#0" class="cd-item-remove cd-img-replace">Remove</a>
+					</li>
 				</ul>
 				<!-- end #shopcart items -->
 				<div class="cd-cart-total">
-					<p>Total <span>$67.32</span></p>
+					<p>
+						Total <span>$67.32</span>
+					</p>
 				</div>
 
-		<a href="#0" class="checkout-btn">Checkout</a>
-		
-		<p class="cd-go-to-cart"><a href="#0">Shopping Cart page</a></p>
+				<a href="#0" class="checkout-btn">Checkout</a>
+
+				<p class="cd-go-to-cart">
+					<a href="#0">Shopping Cart page</a>
+				</p>
 			</div>
 			<!-- end #shopcart -->
-			
+
 			<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
 			<br class="clearfloat" />
 			<!-- begin #footer -->
 
-			<!-- accordion testing -->
-
-			<div id="accordion">
-				<h3><a href="#">Book description</a></h3>
-				<div>
-					<!-- panel contents -->
-				</div>
-				<h3><a href="#">About the author</a></h3>
-				<div>
-					<!-- panel contents -->
-				</div>
-				<h3><a href="#">Who this book is for</a></h3>
-				<div>
-					<!-- panel contents -->
-				</div>
-			</div>
-
-			<!-- -->
-
 			<div id="footer">
-				<p>
-					Terms of Use | <a title="This page validates as XHTML 1.0 Strict" href="http://validator.w3.org/check/referer" class="footerLink"><abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a> | <a title="This page validates as CSS" href="http://jigsaw.w3.org/css-validator/check/referer" class="footerLink"><abbr title="Cascading Style Sheets">CSS</abbr></a> |  Copyright &copy; BrazIndi 2015.
-				</p>
+				<div class="clearfix">
+
+					<p>
+						© 2015 BrazilIndiaMovies. All Rights Reserved.
+					</p>
+				</div>
 			</div>
+			<div class="clearfloat"></div>
 			<!-- end #footer -->
 		</div>
 		<!-- end #container -->
